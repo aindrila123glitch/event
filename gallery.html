@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual highlights, coding arenas, stage pitching, and awards from AKI HACKS × HACKTOBERFEST at IEM Kolkata.">
+  <title>Photo Gallery | AKI HACKS × HACKTOBERFEST ’26</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-logo-badge">
+          <div class="brand-logo-inner">⚡</div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">AKI HACKS '26</span>
+          <span class="brand-subtitle">NEX CLUB · CSE (AIML), IEM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="register.html" class="nav-link">Registration</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="register.html" class="nav-link nav-cta">Register Free</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-badge">Moments & Memories</span>
+        <h1 class="page-title">Hackathon <span>Gallery</span></h1>
+        <p class="page-lead">
+          Relive the energy, intense sprint hacking, stage presentations, and community triumphs. 
+          Hover over any card for effects or click to open the full-screen interactive lightbox.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-pad" style="padding-top: 10px;">
+      <div class="container">
+
+        <!-- Category Filter Tabs -->
+        <div class="gallery-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Photos (6)</button>
+          <button class="filter-btn" data-filter="coding">Coding Arena</button>
+          <button class="filter-btn" data-filter="pitching">Project Demos</button>
+          <button class="filter-btn" data-filter="mentorship">Mentorship</button>
+          <button class="filter-btn" data-filter="awards">Awards & Grand Finale</button>
+        </div>
+
+        <!-- 6 Image Grid with CSS Hover Effects -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <!-- Image 1 -->
+          <div class="gallery-card" data-category="coding" data-img-src="assets/images/coding-arena.jpg">
+            <img src="assets/images/coding-arena.jpg" alt="Students coding intensively at Hacktoberfest Kolkata" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Sprint Arena</span>
+              <h3 class="gallery-caption">Intense Overnight Hacking & Git Sprints</h3>
+              <p class="gallery-subcaption">Teams crafting full-stack apps and microservices under neon lights.</p>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="gallery-card" data-category="pitching" data-img-src="assets/images/pitch-stage.jpg">
+            <img src="assets/images/pitch-stage.jpg" alt="Students pitching AI healthcare project on auditorium stage" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Stage Presentation</span>
+              <h3 class="gallery-caption">Open Innovation Project Demonstrations</h3>
+              <p class="gallery-subcaption">Finalists presenting neural network diagnostics live before esteemed jury.</p>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="gallery-card" data-category="mentorship" data-img-src="assets/images/mentorship.jpg">
+            <img src="assets/images/mentorship.jpg" alt="Faculty and tech mentors guiding college students" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Mentorship Session</span>
+              <h3 class="gallery-caption">Architecture Review & Git Flow Guidance</h3>
+              <p class="gallery-subcaption">Senior developers reviewing database schemas, PRs, and system design.</p>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="gallery-card" data-category="awards" data-img-src="assets/images/awards-ceremony.jpg">
+            <img src="assets/images/awards-ceremony.jpg" alt="Winners receiving trophy and cheque on stage" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Champion Podiums</span>
+              <h3 class="gallery-caption">Grand Prize Distribution Ceremony</h3>
+              <p class="gallery-subcaption">Winning teams felicitated with trophies, ₹1,00,000 cheque, and certificates.</p>
+            </div>
+          </div>
+
+          <!-- Image 5 -->
+          <div class="gallery-card" data-category="coding" data-img-src="assets/images/networking-hall.jpg">
+            <img src="assets/images/networking-hall.jpg" alt="Hackathon participants networking in atrium with pizza" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Builder Community</span>
+              <h3 class="gallery-caption">Networking Atrium & Refreshment Breaks</h3>
+              <p class="gallery-subcaption">300+ developers sharing ideas, pizza, and open-source contributions.</p>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="gallery-card" data-category="awards" data-img-src="assets/images/community-grand.jpg">
+            <img src="assets/images/community-grand.jpg" alt="Grand group photo of AKI HACKS Hacktoberfest Kolkata" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Community Finale</span>
+              <h3 class="gallery-caption">AKI HACKS × Hacktoberfest Kolkata Family</h3>
+              <p class="gallery-subcaption">50+ builders, volunteers, and NEX Club leads celebrating a historic hackathon.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal (JavaScript Feature) -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button class="modal-close-btn" id="lightboxClose" aria-label="Close Lightbox" style="position: absolute; top: 24px; right: 24px; z-index: 3100;">&times;</button>
+    <div class="lightbox-content">
+      <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+      <img src="" alt="Enlarged Hackathon View" class="lightbox-img" id="lightboxImg">
+      <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+      <div class="lightbox-title" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-logo-badge" style="width: 38px; height: 38px;">
+              <div class="brand-logo-inner" style="font-size: 16px;">⚡</div>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="font-size: 1.1rem;">AKI HACKS ’26</span>
+              <span class="brand-subtitle">NEX CLUB · IEM KOLKATA</span>
+            </div>
+          </div>
+          <p>
+            Dept. of Computer Science & Engineering (AIML), Institute of Engineering & Management (IEM), Kolkata.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events Schedule</a></li>
+            <li><a href="register.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Community Links</h5>
+          <ul>
+            <li><a href="about.html">About Department & NEX Club</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://akihacks.xyz" target="_blank" rel="noopener">akihacks.xyz</a></li>
+            <li><a href="https://events.mlh.com/events/15462-hacktoberfest-hack-day-kolkata-x-aki-hacks" target="_blank" rel="noopener">MLH Hack Day Event</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Socials</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/_nex_iem_?stkn=MWtocXBzdHU1djRtYw==" target="_blank" rel="noopener">Instagram: @_nex_iem_</a></li>
+            <li><a href="mailto:nex@iemcal.com">nex@iemcal.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>PCCCS382 · IT Workshop · Dept. of CSE (AIML), IEM Kolkata</div>
+        <div>© 2026 AKI HACKS × HACKTOBERFEST · All rights reserved by NEX Club</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

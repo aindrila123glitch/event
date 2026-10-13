@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for AKI HACKS × HACKTOBERFEST '26 at IEM Kolkata. Free registration for university students.">
+  <title>Event Registration | AKI HACKS × HACKTOBERFEST ’26</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-logo-badge">
+          <div class="brand-logo-inner">⚡</div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">AKI HACKS '26</span>
+          <span class="brand-subtitle">NEX CLUB · CSE (AIML), IEM</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="register.html" class="nav-link active">Registration</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="register.html" class="nav-link nav-cta">Register Free</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-badge">Official Portal</span>
+        <h1 class="page-title">Event <span>Registration</span></h1>
+        <p class="page-lead">
+          Fill out the details below to claim your free pass for AKI HACKS × HACKTOBERFEST ’26.
+          All fields validated instantly with JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="section-pad" style="padding-top: 10px;">
+      <div class="container">
+        <div class="form-shell">
+          <div style="margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+            <div>
+              <h2 style="font-family: var(--font-display); font-size: 1.4rem;">Participant Entry Form</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Organized by Dept. of CSE (AIML), IEM Kolkata & NEX Club</p>
+            </div>
+            <span class="page-badge" style="margin-bottom: 0;">100% Free</span>
+          </div>
+
+          <form id="registrationForm" novalidate>
+            <div class="form-grid">
+
+              <!-- 1. Full Name -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <!-- 2. Roll No -->
+              <div class="form-group">
+                <label for="rollNo" class="form-label">University / College Roll No. <span class="req">*</span></label>
+                <input type="text" id="rollNo" class="form-input" placeholder="e.g. 12022002019" required>
+                <span class="field-error" id="rollError"></span>
+              </div>
+
+              <!-- 3. Email Address -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" class="form-input" placeholder="e.g. student@iemcal.com" autocomplete="email" required>
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <!-- 4. Phone Number -->
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number (10 Digits) <span class="req">*</span></label>
+                <input type="tel" id="phone" class="form-input" placeholder="e.g. 9830012345" maxlength="10" autocomplete="tel" required>
+                <span class="field-error" id="phoneError"></span>
+              </div>
+
+              <!-- 5. Department -->
+              <div class="form-group">
+                <label for="department" class="form-label">Department / Branch <span class="req">*</span></label>
+                <select id="department" class="form-select" required>
+                  <option value="">-- Select Your Department --</option>
+                  <option value="CSE (AIML)">Computer Science & Engineering (AIML)</option>
+                  <option value="CSE (Core)">Computer Science & Engineering (Core)</option>
+                  <option value="Information Technology">Information Technology (IT)</option>
+                  <option value="CSE (IoT/Cybersecurity)">CSE (IoT / Cybersecurity / Blockchain)</option>
+                  <option value="CSBS">Computer Science & Business Systems (CSBS)</option>
+                  <option value="Electronics & Communication (ECE)">Electronics & Communication (ECE)</option>
+                  <option value="BCA / MCA">BCA / MCA</option>
+                  <option value="Other Engineering Branch">Other Engineering Branch / Other College</option>
+                </select>
+                <span class="field-error" id="deptError"></span>
+              </div>
+
+              <!-- 6. Event Selection -->
+              <div class="form-group">
+                <label for="eventSelect" class="form-label">Select Event <span class="req">*</span></label>
+                <select id="eventSelect" class="form-select" required>
+                  <option value="">-- Choose Hackathon Event --</option>
+                  <option value="aki-hacks">AKI HACKS: 12-Hour Flagship Hackathon</option>
+                  <option value="hacktoberfest-sprint">Hacktoberfest Open-Source PR Sprint</option>
+                  <option value="ai-keynote">DevRel & Tech Talk: Scaling AI Systems</option>
+                  <option value="project-pitches">Open Innovation Showcase & Project Pitches</option>
+                  <option value="lightning-ctf">Lightning CTF & Speed Coding Duel</option>
+                  <option value="awards-ceremony">Grand Awards & Closing Ceremony</option>
+                </select>
+                <span class="field-error" id="eventError"></span>
+              </div>
+
+              <!-- 7. Gender -->
+              <div class="form-group-full">
+                <label class="form-label">Gender <span class="req">*</span></label>
+                <div class="gender-options">
+                  <label class="gender-label">
+                    <input type="radio" name="gender" value="Male">
+                    <span>Male</span>
+                  </label>
+                  <label class="gender-label">
+                    <input type="radio" name="gender" value="Female">
+                    <span>Female</span>
+                  </label>
+                  <label class="gender-label">
+                    <input type="radio" name="gender" value="Non-Binary">
+                    <span>Non-Binary</span>
+                  </label>
+                  <label class="gender-label">
+                    <input type="radio" name="gender" value="Prefer Not To Say">
+                    <span>Prefer not to say</span>
+                  </label>
+                </div>
+                <span class="field-error" id="genderError"></span>
+              </div>
+
+              <!-- Bonus Hackathon Team fields -->
+              <div class="form-group">
+                <label for="teamName" class="form-label">Team Name <span style="font-size: 0.8rem; color: var(--text-muted);">(Optional / For AKI Hacks)</span></label>
+                <input type="text" id="teamName" class="form-input" placeholder="e.g. ByteForce Kolkata">
+              </div>
+
+              <div class="form-group">
+                <label for="teamSize" class="form-label">Team Size <span style="font-size: 0.8rem; color: var(--text-muted);">(2 to 4 members)</span></label>
+                <select id="teamSize" class="form-select">
+                  <option value="2">2 Members</option>
+                  <option value="3">3 Members</option>
+                  <option value="4" selected>4 Members</option>
+                  <option value="Individual">Individual (Looking for teammates on Discord)</option>
+                </select>
+              </div>
+
+              <!-- Submit button -->
+              <div class="form-group-full" style="margin-top: 16px;">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.05rem;" id="submitRegBtn">
+                  <span>⚡ Submit Registration & Generate Pass</span>
+                </button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Registration Success Ticket Modal (JavaScript Feature) -->
+  <div class="modal-overlay" id="ticketModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div style="text-align: center; margin-bottom: 16px;">
+        <span style="font-size: 2.2rem; display: block; margin-bottom: 6px;">🎉</span>
+        <h3 id="modalTitle" style="font-family: var(--font-display); font-size: 1.5rem; color: #ffffff;">Registration Confirmed!</h3>
+        <p style="color: var(--text-secondary); font-size: 0.88rem;">Welcome to AKI HACKS × HACKTOBERFEST ’26. Here is your official entry pass.</p>
+      </div>
+
+      <!-- Ticket Visual Card -->
+      <div class="ticket-wrapper" id="printableTicket">
+        <div class="ticket-header">
+          <div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--primary); font-weight: 700;">Official Participant Pass</div>
+            <div style="font-family: var(--font-display); font-weight: 800; font-size: 1.15rem;">AKI HACKS ’26 × HACKTOBERFEST</div>
+          </div>
+          <div class="ticket-id" id="passTicketId">AKI26-103948</div>
+        </div>
+
+        <div class="ticket-details-grid">
+          <div class="ticket-field">
+            <div class="lbl">Participant Name</div>
+            <div class="val" id="passName">--</div>
+          </div>
+          <div class="ticket-field">
+            <div class="lbl">Roll Number</div>
+            <div class="val" id="passRoll">--</div>
+          </div>
+          <div class="ticket-field">
+            <div class="lbl">Department</div>
+            <div class="val" id="passDept">--</div>
+          </div>
+          <div class="ticket-field">
+            <div class="lbl">Gender</div>
+            <div class="val" id="passGender">--</div>
+          </div>
+          <div class="ticket-field" style="grid-column: span 2;">
+            <div class="lbl">Registered Event</div>
+            <div class="val" id="passEvent" style="color: var(--secondary);">--</div>
+          </div>
+          <div class="ticket-field">
+            <div class="lbl">Email</div>
+            <div class="val" id="passEmail" style="font-size: 0.8rem; word-break: break-all;">--</div>
+          </div>
+          <div class="ticket-field">
+            <div class="lbl">Phone</div>
+            <div class="val" id="passPhone">--</div>
+          </div>
+        </div>
+
+        <!-- Simulated Barcode & Security Hologram -->
+        <div style="margin-top: 18px; padding-top: 12px; border-top: 1px dashed rgba(255, 255, 255, 0.15); display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 0.72rem; color: var(--text-muted);">
+            📍 Venue: IEM Kolkata Management House | Oct 31, 2026
+          </div>
+          <div style="padding: 4px 10px; background: rgba(0, 240, 255, 0.1); border: 1px solid var(--secondary); border-radius: 4px; font-family: var(--font-mono); font-size: 0.7rem; color: var(--secondary);">
+            VALID ENTRY
+          </div>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 20px;">
+        <button class="btn btn-secondary" id="copyTicketBtn" style="padding: 10px 18px; font-size: 0.88rem;">
+          📋 Copy Ticket ID
+        </button>
+        <button class="btn btn-primary" id="printTicketBtn" style="padding: 10px 18px; font-size: 0.88rem;">
+          🖨️ Print / Save Pass
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-logo-badge" style="width: 38px; height: 38px;">
+              <div class="brand-logo-inner" style="font-size: 16px;">⚡</div>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="font-size: 1.1rem;">AKI HACKS ’26</span>
+              <span class="brand-subtitle">NEX CLUB · IEM KOLKATA</span>
+            </div>
+          </div>
+          <p>
+            Dept. of Computer Science & Engineering (AIML), Institute of Engineering & Management (IEM), Kolkata.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="register.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Official Portals</h5>
+          <ul>
+            <li><a href="https://events.mlh.com/events/15462-hacktoberfest-hack-day-kolkata-x-aki-hacks" target="_blank" rel="noopener">MLH Hack Day Kolkata</a></li>
+            <li><a href="https://akihacks.xyz" target="_blank" rel="noopener">Official akihacks.xyz</a></li>
+            <li><a href="https://www.instagram.com/_nex_iem_?stkn=MWtocXBzdHU1djRtYw==" target="_blank" rel="noopener">@_nex_iem_ Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Helpline</h5>
+          <ul>
+            <li><a href="mailto:nex@iemcal.com">nex@iemcal.com</a></li>
+            <li><a href="tel:+919830012345">+91 98300 12345</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>PCCCS382 · IT Workshop · Dept. of CSE (AIML), IEM Kolkata</div>
+        <div>© 2026 AKI HACKS × HACKTOBERFEST · All rights reserved by NEX Club</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+  <script>
+    // Prefill event dropdown if URL query param exists (e.g. ?event=ai-keynote)
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const eventParam = urlParams.get('event');
+      if (eventParam) {
+        const select = document.getElementById('eventSelect');
+        if (select) {
+          select.value = eventParam;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
