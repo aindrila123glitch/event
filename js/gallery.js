@@ -1,6 +1,6 @@
 /**
- * AKI HACKS × HACKTOBERFEST '26 - Interactive Gallery Lightbox & Filter
- * PCCCS382 · IT Workshop · Dept. of CSE (AIML), IEM Kolkata
+ * INNOVEX ’26 - Interactive Gallery Lightbox & Filter
+ * PCCCS382 · IT Workshop · IEM
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lightbox || activeItems.length === 0) return;
     const current = activeItems[currentIndex];
     lightboxImg.src = current.src;
-    lightboxCaption.innerHTML = `<span style="color: #ff6a00; font-size: 0.85rem; display: block; text-transform: uppercase;">${current.tag}</span>${current.caption}`;
+    lightboxCaption.innerHTML = `<span style="color: var(--secondary); font-size: 0.85rem; display: block; text-transform: uppercase;">${current.tag}</span>${current.caption}`;
     lightbox.classList.add('active');
   }
 

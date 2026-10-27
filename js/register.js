@@ -1,6 +1,6 @@
 /**
- * AKI HACKS × HACKTOBERFEST '26 - Registration Form Validation & Pass Generator
- * PCCCS382 · IT Workshop · Dept. of CSE (AIML), IEM Kolkata
+ * INNOVEX ’26 - Registration Form Validation & Pass Generator
+ * PCCCS382 · IT Workshop · IEM
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Generate unique Ticket ID
     const randomHex = Math.floor(100000 + Math.random() * 900000);
-    const ticketId = `AKI26-${randomHex}`;
+    const ticketId = `INX26-${randomHex}`;
 
     // Registration data object
     const regData = {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Save to localStorage
     try {
-      localStorage.setItem('aki_hacks_registration', JSON.stringify(regData));
+      localStorage.setItem('innovex_registration', JSON.stringify(regData));
     } catch (err) {
       console.warn('Storage unavailable', err);
     }
@@ -131,7 +131,6 @@ function validateName(input) {
 function validateRoll(input) {
   const val = input.value.trim();
   const errorEl = document.getElementById('rollError');
-  // Matches university roll format like 12022002019 or CSE-2023-042
   const rollRegex = /^[A-Za-z0-9\/-]{4,20}$/;
 
   if (!val) {
@@ -253,46 +252,56 @@ function showTicketModal(data) {
   document.getElementById('passPhone').textContent = data.phone;
 
   modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
 
   if (typeof showToast === 'function') {
-    showToast(`Registration Successful! Pass Generated: ${data.ticketId}`, 'success');
+    showToast('Registration successful! Your pass has been generated.', 'success');
   }
 }
 
 function setupModalEvents() {
   const modal = document.getElementById('ticketModal');
   const closeBtn = document.getElementById('closeModalBtn');
-  const printBtn = document.getElementById('printTicketBtn');
   const copyBtn = document.getElementById('copyTicketBtn');
+  const printBtn = document.getElementById('printTicketBtn');
 
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('active');
-    });
+  if (!modal) return;
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
   }
 
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.classList.remove('active');
-      }
-    });
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
   }
 
-  if (printBtn) {
-    printBtn.addEventListener('click', () => {
-      window.print();
-    });
-  }
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 
   if (copyBtn) {
     copyBtn.addEventListener('click', () => {
       const ticketId = document.getElementById('passTicketId').textContent;
       navigator.clipboard.writeText(ticketId).then(() => {
         if (typeof showToast === 'function') {
-          showToast('Pass ID copied to clipboard!', 'success');
+          showToast(`Copied Ticket ID: ${ticketId}`, 'success');
         }
+      }).catch(() => {
+        alert(`Ticket ID: ${ticketId}`);
       });
+    });
+  }
+
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      window.print();
     });
   }
 }

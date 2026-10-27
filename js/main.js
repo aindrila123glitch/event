@@ -1,6 +1,6 @@
 /**
- * AKI HACKS × HACKTOBERFEST '26 - Core JavaScript
- * NEX Club | Dept. of CSE (AIML), IEM Kolkata
+ * INNOVEX ’26 - Core JavaScript
+ * IEM Kolkata
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Countdown Timer to AKI HACKS (31 October 2026 08:00:00 IST)
+  // 2. Countdown Timer to INNOVEX ’26 (31 October 2026 08:00:00 IST)
   initCountdown();
 
   // 3. Header background on scroll

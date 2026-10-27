@@ -1,23 +1,23 @@
-# AKI HACKS × HACKTOBERFEST ’26 — Official Event Website
+# INNOVEX ’26 — Official Event Website
 **Course**: PCCCS382 · IT Workshop  
-**Department**: Dept. of Computer Science & Engineering (AIML), Institute of Engineering & Management (IEM), Kolkata  
-**Club / Organization**: NEX Club (Official Technical Society)  
+**Institution**: Institute of Engineering & Management (IEM), Kolkata  
+**Coordinator**: Mr. Sharma (Event Coordinator & Faculty Mentor, IEM)  
 **Event Date**: 31 October 2026 (12-Hour Offline Hackathon, Kolkata)  
 
 ---
 
 ## 📌 Project Overview
-A modern, responsive, high-performance web platform crafted for **AKI HACKS × HACKTOBERFEST ’26**, an offline 12-hour hackathon with 8 hours of dedicated sprint hacking, teams of 2–4 members, and an open innovation format.
+A modern, responsive, high-performance web platform crafted for **INNOVEX ’26**, an offline 12-hour hackathon with 8 hours of dedicated sprint hacking, teams of 2–4 members, and an open innovation format organized at **IEM**.
 
 The project strictly fulfills all 6 pages and criteria specified in the IT Workshop brief:
 
 | # | Page / Feature | Brief Requirements | Implementation Details |
 |---|---|---|---|
-| **1** | **Home** (`index.html`) | College/dept name, logo, nav menu, intro | Dept. of CSE (AIML), IEM Kolkata header, NEX Club branding, live countdown timer to 31 Oct 2026, hero metrics, quick links. |
+| **1** | **Home** (`index.html`) | College name, logo, nav menu, intro | IEM header, brand mark, live countdown timer to 31 Oct 2026, hero metrics, quick links. |
 | **2** | **Events** (`events.html`) | At least 5 events: name, date, venue, description | 6 detailed sessions (Flagship Hackathon, PR Sprint, AI Keynote, Pitches, CTF Duel, Ceremony) + category filter. |
 | **3** | **Registration** (`register.html`) | Name, roll no, email, phone, dept, gender, event + JS validation | Real-time JS validation, field error handling, interactive Ticket ID generator pass modal with print/copy support. |
 | **4** | **Gallery** (`gallery.html`) | At least 6 images, CSS styling, hover effects | 6 photorealistic hackathon images, CSS hover zoom/glow, category filtering, fullscreen lightbox with next/prev navigation. |
-| **5** | **About Us** (`about.html`) | Department & coordinator information | Dept. of CSE (AIML) profile, NEX Club mission, Faculty Advisory Board, Student Organizing Leads with contact cards. |
+| **5** | **About Us** (`about.html`) | Institution & coordinator information | IEM profile, Event Coordination under Mr. Sharma, Organizing Committees with contact cards. |
 | **6** | **Contact** (`contact.html`) | Address, email, phone, feedback form | Management House IEM Kolkata address, helplines, feedback form with real-time validation and confirmation toast. |
 
 ---
@@ -33,7 +33,7 @@ The project strictly fulfills all 6 pages and criteria specified in the IT Works
 
 ## 📂 Folder Structure
 ```
-aki-hacks-website/
+innovex-website/
 ├── index.html                  # Page 1: Home
 ├── events.html                 # Page 2: Events (6 sessions)
 ├── register.html               # Page 3: Registration with JS validation
@@ -43,7 +43,7 @@ aki-hacks-website/
 ├── README.md                   # Project Documentation
 ├── PROJECT_REPORT.md           # Submission Report for PCCCS382 Lab
 ├── css/
-│   └── style.css               # Core Design System, responsive layouts, glassmorphism
+│   └── style.css               # Core Design System, Electric Indigo & Neon Mint theme
 ├── js/
 │   ├── main.js                 # Countdown timer, mobile nav, global toasts
 │   ├── register.js             # Registration form validation & ticket pass generator
@@ -68,14 +68,6 @@ Simply double-click `index.html` to open it in any modern browser (Chrome, Edge,
 
 ### Option 2: Local HTTP Server (Python)
 ```bash
-cd C:\Users\Dell\.gemini\antigravity-ide\scratch\aki-hacks-website
 python -m http.server 4500
 ```
 Open [http://localhost:4500/](http://localhost:4500/) in your web browser.
-
----
-
-## 🔗 Official Event Links
-- **Registrations (MLH)**: https://events.mlh.com/events/15462-hacktoberfest-hack-day-kolkata-x-aki-hacks
-- **Official Website**: https://akihacks.xyz
-- **Official Instagram**: https://www.instagram.com/_nex_iem_?stkn=MWtocXBzdHU1djRtYw==

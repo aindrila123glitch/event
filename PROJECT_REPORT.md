@@ -2,33 +2,33 @@
 **Course Code**: PCCCS382  
 **Course Name**: IT Workshop  
 **Academic Year**: 2026–2027  
-**Department**: Department of Computer Science & Engineering (AIML)  
 **Institution**: Institute of Engineering & Management (IEM), Kolkata  
+**Coordinator**: Mr. Sharma (Event Coordinator & Faculty Mentor, IEM)  
 
 ---
 
 ### Project Title:
-**Official Web Portal for AKI HACKS × HACKTOBERFEST ’26**  
-*Organized by NEX Club, IEM Kolkata*
+**Official Web Portal for INNOVEX ’26**  
+*Organized by IEM, Kolkata*
 
 ---
 
 ## 1. Introduction & Objectives
-The objective of this project is to develop a fully responsive, aesthetic, and interactive multi-page web platform for **AKI HACKS × HACKTOBERFEST ’26**, a 12-hour offline hackathon scheduled for **31 October 2026** at the IEM Kolkata campus. 
+The objective of this project is to develop a fully responsive, aesthetic, and interactive multi-page web platform for **INNOVEX ’26**, a 12-hour offline hackathon scheduled for **31 October 2026** at the IEM Kolkata campus. 
 
 The website satisfies the six primary requirements outlined in the workshop brief:
-1. **Home Page**: College & department identification, NEX Club logo badge, responsive navigation, event overview, live countdown timer, and quick statistics.
+1. **Home Page**: College identification, IEM brand badge, responsive navigation, event overview, live countdown timer, and quick statistics.
 2. **Events Page**: Schedule of at least five events (implemented 6) with titles, dates, timings, venues, and descriptions.
 3. **Registration Page**: Dedicated form accepting Name, Roll No., Email, Phone, Department, Gender, and Event with real-time and on-submit JavaScript validation, plus dynamic Ticket ID generation.
 4. **Gallery Page**: Grid of at least six high-resolution hackathon images with CSS hover transitions, category filtering, and an accessible lightbox modal.
-5. **About Us Page**: Department profile (CSE - AIML) and comprehensive details of faculty advisors and student coordinators.
-6. **Contact Page**: Campus location, official email addresses, emergency phone lines, social handles, and an interactive feedback form.
+5. **About Us Page**: IEM institutional profile and comprehensive details of event coordination under Mr. Sharma and student organizing committees.
+6. **Contact Page**: Campus location, official email addresses, emergency phone lines, and an interactive feedback form.
 
 ---
 
 ## 2. System Architecture & Technologies Used
 - **HyperText Markup Language (HTML5)**: Semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-- **Cascading Style Sheets (CSS3)**: Vanilla CSS design system incorporating CSS variables, Flexbox, Grid, glassmorphic backdrop filters, and responsive media queries.
+- **Cascading Style Sheets (CSS3)**: Vanilla CSS design system incorporating the Electric Indigo & Neon Mint theme, CSS variables, Flexbox, Grid, glassmorphic backdrop filters, and responsive media queries.
 - **JavaScript (ES6+)**:
   - Modular DOM manipulation.
   - Event listeners for live input verification and form validation regex patterns.
@@ -40,16 +40,16 @@ The website satisfies the six primary requirements outlined in the workshop brie
 ## 3. Page Specifications & Features
 
 ### 3.1 Page 1: Home (`index.html`)
-- **Institution Header**: Department of Computer Science & Engineering (AIML), IEM Kolkata.
-- **Branding**: NEX Club and AKI HACKS dual-tone brand mark.
+- **Institution Header**: IEM.
+- **Branding**: INNOVEX '26 and IEM brand mark.
 - **Introduction**: 12-hour offline hackathon format with 8 hours of sprint coding, teams of 2–4 members, and open innovation.
 - **Live JavaScript Countdown**: Synchronized to 31 October 2026, 08:00 AM IST.
 
 ### 3.2 Page 2: Events (`events.html`)
 Includes six offline sessions:
-1. *AKI HACKS 2026 Flagship Hackathon* (08:00 AM – 08:00 PM, Management House Auditorium).
-2. *Hacktoberfest Open-Source PR Sprint* (11:00 AM – 01:00 PM, CSE AIML Lab 4).
-3. *DevRel & Tech Talk: Scaling AI Systems* (02:00 PM – 03:15 PM, Smart Seminar Hall A).
+1. *INNOVEX 2026 Flagship Hackathon* (08:00 AM – 08:00 PM, Management House Auditorium & Tech Labs).
+2. *Open-Source PR Sprint & Workshop* (11:00 AM – 01:00 PM, Tech Innovation Lab 4).
+3. *DevRel & Tech Talk: Scaling Intelligent Systems* (02:00 PM – 03:15 PM, Smart Seminar Hall A).
 4. *Open Innovation Showcase & Project Pitches* (04:30 PM – 06:45 PM, Main Stage Arena).
 5. *Lightning CTF & Speed Coding Duel* (07:00 PM – 07:45 PM, Cyber Arena Lab 2).
 6. *Grand Awards & Closing Ceremony* (08:00 PM – 09:00 PM, IEM Auditorium).
@@ -63,7 +63,7 @@ Implements client-side validation for:
 - **Department**: Mandatory dropdown selection.
 - **Gender**: Single-choice radio input requirement.
 - **Event**: Selection of registered track or ceremony pass.
-- **Pass Generator**: On valid submission, automatically renders a personalized registration pass modal with a unique ID (e.g. `AKI26-XXXXXX`), copy button, and print button.
+- **Pass Generator**: On valid submission, automatically renders a personalized registration pass modal with a unique ID (e.g. `INX26-XXXXXX`), copy button, and print button.
 
 ### 3.4 Page 4: Gallery (`gallery.html`)
 Displays six images covering the full hackathon lifecycle:
@@ -72,18 +72,18 @@ Displays six images covering the full hackathon lifecycle:
 3. *Mentorship & Git Architecture*: System design reviews on whiteboards.
 4. *Podium & Prize Distribution*: Champions with giant cheque and trophy.
 5. *Builder Community Networking*: Atrium networking and refreshment breaks.
-6. *Grand Finale Group Photo*: Over 50 builders and organizers with event banners.
+6. *Grand Finale Group Photo*: Over 350 builders and organizers celebrating the event at IEM.
 Features smooth zoom hover animations, category filters, and keyboard-friendly lightbox viewer.
 
 ### 3.5 Page 5: About Us (`about.html`)
-- Overview of Department of CSE (AIML), IEM Kolkata.
-- NEX Club philosophy and community mission.
-- **Faculty Leadership**: Dr. Satyajit Chakrabarti (Director), Dr. Subhabrata Sengupta (HOD), Prof. Anirban Mukherjee (Faculty Coordinator), Prof. Debashree Roy (Lab Convener).
-- **Student Leadership**: Soumyadip Roy (President), Ananya Banerjee (Tech Lead), Rohan Mukherjee (Logistics Lead), Priyanshu Sen (Outreach Lead).
+- Overview of Institute of Engineering & Management (IEM), Kolkata.
+- Organizing Secretariat mission and experiential learning philosophy.
+- **Event Coordination**: Mr. Sharma (Lead Event Coordinator & Faculty Mentor, IEM).
+- **Organizing Committees**: Student Organizing Lead, Technical Operations Team, Logistics & Hospitality Wing, Outreach & Communications.
 
 ### 3.6 Page 6: Contact & Feedback (`contact.html`)
 - **Campus Address**: Management House, D-1, Street Number 27, DD Block, Action Area I, Newtown / Salt Lake Sector V, Kolkata 700091.
-- **Email Helplines**: `nex@iemcal.com` and `contact@akihacks.xyz`.
+- **Email Helplines**: `coordinator@iem.edu.in` and `secretariat@iem.edu.in`.
 - **Contact Numbers**: +91 98300 12345 / +91 98741 56789.
 - **Interactive Feedback Form**: Accepts visitor queries with input validation, toast notification, and instant confirmation messaging.
 
@@ -92,9 +92,9 @@ Features smooth zoom hover animations, category filters, and keyboard-friendly l
 ## 4. Verification & Testing
 - Tested across viewport widths: Desktop (1920x1080), Laptop (1366x768), Tablet (768x1024), and Mobile (375x667).
 - HTTP Status: Verified `HTTP/1.0 200 OK` across all HTML documents, CSS files, JavaScript assets, and images.
-- All external links verified against official MLH, Instagram (`@_nex_iem_`), and AKI HACKS portals.
+- Validated form submission and pass generation with `INX26-` ticket formatting.
 
 ---
 
 ## 5. Conclusion
-The website delivers a production-grade, aesthetically captivating solution that complies with all academic requirements for the PCCCS382 IT Workshop laboratory assignment while serving as a real promotional platform for the AKI HACKS × HACKTOBERFEST ’26 offline hackathon.
+The website delivers a production-grade, aesthetically captivating solution that complies with all academic requirements for the PCCCS382 IT Workshop laboratory assignment while serving as an official promotional platform for the INNOVEX ’26 offline hackathon organized at IEM.

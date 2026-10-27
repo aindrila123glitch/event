@@ -1,6 +1,6 @@
 /**
- * AKI HACKS × HACKTOBERFEST '26 - Feedback & Contact Handler
- * PCCCS382 · IT Workshop · Dept. of CSE (AIML), IEM Kolkata
+ * INNOVEX ’26 - Feedback & Contact Handler
+ * PCCCS382 · IT Workshop · IEM
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       statusBox.style.display = 'block';
       statusBox.innerHTML = `
         <div style="padding: 16px; background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; border-radius: 8px; color: #a7f3d0;">
-          <strong>Thank you, ${name}!</strong> Your feedback/inquiry has been received by the NEX Club Organizing Team. We will get back to you shortly at ${emailInput.value.trim()}.
+          <strong>Thank you, ${name}!</strong> Your feedback/inquiry has been received by the IEM Organizing Team. We will get back to you shortly at ${emailInput.value.trim()}.
         </div>
       `;
     }
